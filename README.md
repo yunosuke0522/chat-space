@@ -4,7 +4,7 @@
 |------|----|-------|
 |name|integer|null: false, foreign_key: true|
 |password|integer|null: false, foreign_key: true|
-|email|
+|email|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :messages
@@ -36,6 +36,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer||
+|group_id|integer||
 
 ### Association
 - has_many :groups
