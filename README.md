@@ -22,12 +22,12 @@
 - has_many :users, through: :groups_users
 - has_many :groups_users
 
-## messageテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
-|image|string|null: false|
+|text|text||
+|image|string||
 |group|references|null: false|
 |user|references|null: false|
 
@@ -40,8 +40,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false, foreign_key: true|
-|group_id|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
