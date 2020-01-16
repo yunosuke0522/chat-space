@@ -1,3 +1,10 @@
+## what
+データベース設計をREADMEに記述しました。
+## why
+chat-spaeのデータベース設計をするため。
+
+
+
 ## usersテーブル
 
 |Column|Type|Options|
