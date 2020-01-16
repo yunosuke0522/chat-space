@@ -36,8 +36,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer||
-|group_id|integer||
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :groups
