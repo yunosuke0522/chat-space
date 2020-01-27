@@ -1,0 +1,21 @@
+.chat-side
+  .header
+    .header__box
+      %p.header__box__user
+        ディメンター
+      %ul.header__box__menu
+        %li.header__box__menu__group
+        = link_to "#" do
+          = icon('fa', 'edit')
+          %span<>
+        %li.header__box__menu__edit
+        = link_to "#" do
+          = icon('fa', 'cog')
+          %span<>
+  .groups
+    .group
+      = link_to "#" , class: "group" do
+        %p.group__group-name
+          美味しいハンバーガー
+        %p.group__group-message
+          まだメッセージがありません

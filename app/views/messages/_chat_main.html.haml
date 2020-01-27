@@ -1,0 +1,29 @@
+.chat-main
+  .chat-main__header
+    .main__header__left-box
+      .main__header__left-box-group
+        ホグワーツ魔法魔術学校
+      %ul.main__header__left-box-member
+        グリフィンドール:
+        %li.main__header__left-box-member-name
+          おーちゃん
+    .main__header__edit-btn
+      Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          校長アルバスダンブルドア
+        .message__upper-info__date
+          2020/01/25(Sat) 19:11:38
+      .message__text
+        エクスペクトぱとろーななぁあああああんむっ
+
+  .form
+    .new_message
+      .input_box
+        %input{type:"text",class: "input-box__text",placeholder:"type a message"}
+        %label{class:"input-box__image"}
+          = icon('fas','image')
+          %input{type: "file",class: "file"}
+      %input.send{type: "submit", value: "send"}

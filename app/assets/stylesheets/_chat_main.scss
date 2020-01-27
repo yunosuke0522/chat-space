@@ -1,0 +1,103 @@
+.chat-main {
+  height:100vh;
+  width: calc(100vw - 300px);
+  float: right;
+  &__header{
+    height: 100px;
+    background-color:#ffffff;
+    display: flex;
+    padding: 0 40px;
+    
+     }
+  }
+  .main__header__left-box{
+    margin-top: 35px;
+    .main__header__left-box-group{
+      font-size: 20px;
+      color: #333;
+      position: relative;
+      margin-bottom: 15px;
+    }
+    .main__header__left-box-member{
+      display: flex;
+      font-size: 12px;
+      color: #999999;
+      &__left-box-member-name{
+        display: flex;
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+  }
+  
+  .main__header__edit-btn{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border: solid 1px #38aef0;
+    right: 40px;
+    position: absolute;
+    margin-top: 30px;
+    color: #38aef0;
+  }
+  
+  .messages {
+    background-color:#fafafa; 
+    height: calc(100vh - 190px);
+    padding: 46px 40px;
+      }
+      
+      .message__upper-info{
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .message__upper-info__talker{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .message__upper-info__date{
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;;
+      }
+        .message__text{
+          color: #434a54;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+  .form{
+    height: 90px;
+    background-color:#d2d2d2;
+    padding: 20px 40px;
+  }
+    .new_message{
+      display: flex;
+    }
+      .input_box{
+        width: 100%;
+        position: relative;
+      }
+      .input-box__text{
+        height: 50px;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        color: #434a54;
+      }
+      .input-box__image{
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+    .file{
+      display: none;
+        }
+  .send{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+      // padding: 0 30px;
+    margin-left: 15px;
+    background-color: #38aef0;
+    color: white;
+  }
