@@ -3,7 +3,7 @@
   width: 300px;
   height: 100vh;
   float: left;  
-  color: white;
+  color:$side-main-white;
 
   .header {
     height: 100px;
@@ -24,16 +24,16 @@
     }
   }
   .fa{
-    color: white;  
+    color: $side-main-white;  
   }
   .groups{
-    color: #ffffff;
+    color: $side-main-white;
     padding: 20px;
     height: calc(100vh - 100px);
     text-decoration: none;
     margin-bottom: 40px;
     .group{
-      color: #ffffff;
+      color: $side-main-white;
       text-decoration: none;
       &__group-message{
         font-size: 11px;
