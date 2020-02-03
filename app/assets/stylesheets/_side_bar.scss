@@ -4,8 +4,7 @@
   height: 100vh;
   float: left;  
   color:$side-main-white;
-
-  .header {
+  .side-header {
     height: 100px;
     width: 300px;
     background-color: #253141;
@@ -18,13 +17,13 @@
       font-weight: bold;
       display: flex;
       justify-content: space-between;
-      .header__box__menu__edit{
+      &--edit{
         display: inline;
-    }
+      }
     }
   }
   .fa{
-    color: $side-main-white;  
+    color: $side-main-white;
   }
   .groups{
     color: $side-main-white;
@@ -38,7 +37,6 @@
       &__group-message{
         font-size: 11px;
       }
-      
     }
   }
 }

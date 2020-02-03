@@ -1,14 +1,15 @@
 .chat-main
-  .chat-main__header
-    .main__header__left-box
-      .main__header__left-box-group
-        ホグワーツ魔法魔術学校
-      %ul.main__header__left-box-member
-        グリフィンドール:
-        %li.main__header__left-box-member-name
-          おーちゃん
-    .main__header__edit-btn
-      Edit
+  .main_header
+    .chat-main-header
+      .chat-main-header__left-box
+        .chat-main-header__current-group
+          ホグワーツ魔法魔術学校
+        %ul.chat-main-header__member-list
+          グリフィンドール:
+          %li.chat-main-header__member-name
+            おーちゃん
+      .chat-main-header__edit-btn
+        Edit
   .messages
     .message
       .message__upper-info
@@ -21,9 +22,10 @@
 
   .form
     .new_message
-      .input_box
+      .input-box
+        %form
         %input{type:"text",class: "input-box__text",placeholder:"type a message"}
-        %from{class:"input-box__image"}
+        %label{class:"input-box__image"}
           = icon('fas','image')
-          %input{type: "file",class: "file"}
+          %input{type: "file",class: "input-box__image__file"}
       %input.send{type: "submit", value: "send"}

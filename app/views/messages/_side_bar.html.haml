@@ -1,17 +1,15 @@
 .chat-side
-  .header
-    .header__box
-      %p.header__box__user
+  .side-header
+    .side-header__box
+      %p.side-header__box--user
         ディメンター
-      %ul.header__box__menu
-        %li.header__box__menu__group
+      %ul.side-header__box--menu
+        %li.side-header__box--group
         = link_to "#" do
           = icon('fa', 'edit')
-          %span<>
-        %li.header__box__menu__edit
+        %li.side-header__box--edit
         = link_to "#" do
           = icon('fa', 'cog')
-          %span<>
   .groups
     .group
       = link_to "#" , class: "group" do
