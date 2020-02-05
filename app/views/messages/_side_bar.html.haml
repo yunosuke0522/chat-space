@@ -2,13 +2,13 @@
   .side-header
     .side-header__box
       %p.side-header__box--user
-        ディメンター
+        = current_user.name
       %ul.side-header__box--menu
         %li.side-header__box--group
         = link_to "#" do
           = icon('fa', 'edit')
         %li.side-header__box--edit
-        = link_to "#" do
+        = link_to edit_user_path(current_user) do
           = icon('fa', 'cog')
   .groups
     .group
