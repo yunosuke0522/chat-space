@@ -53,7 +53,7 @@ $('#new_message').on('submit', function(e){
    url: url,
    type: "POST",
    data: formData,
-   dataype: 'json',
+   dataType: 'json',
    processData: false,
    contentType: false
  })
