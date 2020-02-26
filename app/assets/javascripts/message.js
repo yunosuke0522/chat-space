@@ -9,7 +9,7 @@ $(function(){
             ${message.user_name}
           </div>
           <div class="message__upper-info__date">
-            ${message.date}
+            ${message.created_at}
           </div>
         </div>
         <div class="lower-message">
@@ -28,7 +28,7 @@ $(function(){
              ${message.user_name}
            </div>
            <div class="message__upper-info__date">
-             ${message.date}
+             ${message.created_at}
            </div>
          </div>
          <div class="lower-message">
@@ -92,6 +92,6 @@ $(function(){
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-    setInterval(reloadMessages, 7000);
+  setInterval(reloadMessages, 7000);
   }
 });
