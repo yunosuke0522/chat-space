@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .chat-side {
   overflow: scroll;
   background-color:#2f3e51;
@@ -38,6 +42,7 @@
       &__group-message{
         font-size: 11px;
         color: $side-main-white;
+
       }
     }
   }

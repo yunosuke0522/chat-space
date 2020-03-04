@@ -40,7 +40,9 @@
     right: 40px;
     position: absolute;
     margin-top: 30px;
-    color: $btn;
+    .EDIT{
+      color: $btn;
+    }
   }
 }
   .messages {
