@@ -54,6 +54,7 @@ $(function(){
       processData: false,
       contentType: false
     })
+
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html);
@@ -71,12 +72,14 @@ $(function(){
 
   reloadMessages = function() {
     var last_message_id = $(".message:last").data("message-id") || 0;
+    
     $.ajax({
       url: "api/messages",
       type: 'get',
       dataType: 'json',
       data: {id: last_message_id}
     })
+
     .done(function(messages) {
       if (messages.length !== 0) {
         var insertHTML = '';

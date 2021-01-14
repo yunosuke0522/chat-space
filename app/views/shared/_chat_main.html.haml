@@ -1,8 +1,7 @@
 .chat-main
   .main_header
     .chat-main-header
-    .chat-main-header__edit-btn
-      edit
+    = link_to 'Edit', edit_group_path(@group), class: 'hat-main-header__edit-btn'
       .chat-main-header__left-box
         .chat-main-header__current-group
           sora
@@ -29,4 +28,4 @@
         = f.label :image, class: 'input-box__image' do
           = icon('fas','image')
           = f.file_field :image, class: "input-box__image__file"
-      = f.submit 'send', class: 'send'
+      = f.submit 'send', class: 'send' 
